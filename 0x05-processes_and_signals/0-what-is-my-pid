@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 # Displays its own PID.
 
+<<<<<<< HEAD
 echo  $$
+=======
+echo $$
+
+>>>>>>> fbd96087233d3acf2680ae816c88ae96e57ea82c

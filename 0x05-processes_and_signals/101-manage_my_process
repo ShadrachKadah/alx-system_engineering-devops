@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # Manages the script manage_my_process.
 #   When passed the argument `start`:
 #     1. Starts manage_my_process
@@ -38,5 +39,31 @@ then
     echo "manage_my_process restarted"
 else
     echo "Usage: manage_my_process {start|stop|restart}"
+=======
+#Manages the script manage_my_process.
+
+if [ "$1" == "start" ]
+then
+	./manage_my_process &
+	echo $$ > /var/run/my_process.pid
+	echo "manage_my_process started"
+
+elif [ "$1" == "stop" ]
+then
+	kill "$(pgrep -f ./manage_my_process)"
+	rm /var/run/my_process.pid
+	echo "manage_my_process stopped"
+
+elif [ "$1" == "restart" ]
+then
+	kill "$(pgrep -f ./manage_my_process)"
+	rm /var/run/my_process.pid
+	./manage_my_process &
+	echo $$ > /var/run/my_process.pid
+	echo "manage_my_process restarted"
+
+else
+	echo  "Usage: manage_my_process {start|stop|restart}"
+>>>>>>> fbd96087233d3acf2680ae816c88ae96e57ea82c
 fi
 
