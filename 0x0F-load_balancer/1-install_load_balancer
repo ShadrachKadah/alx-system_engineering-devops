@@ -13,8 +13,8 @@ frontend kadahdigitalworld.tech
 
 backend web_servers
         balance roundrobin
-        server 64820-web-01 100.25.201.131:80
-        server 64820-web-02 18.208.120.48:80
+        server 149959-web-01 100.25.201.131:80
+        server 149959-web-02 18.208.120.48:80
 ' >> /etc/haproxy/haproxy.cfg
 
 # Restart HAproxy service
