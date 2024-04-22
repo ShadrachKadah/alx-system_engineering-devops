@@ -4,4 +4,7 @@
 #+  which might not have a TTY.
 
 ps -auxf
+<<<<<<< HEAD
+=======
 
+>>>>>>> fbd96087233d3acf2680ae816c88ae96e57ea82c

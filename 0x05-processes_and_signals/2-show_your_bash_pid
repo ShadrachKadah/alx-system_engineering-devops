@@ -3,4 +3,7 @@
 # shellcheck disable=SC2009
 
 ps -aux | grep bash
+<<<<<<< HEAD
+=======
 
+>>>>>>> fbd96087233d3acf2680ae816c88ae96e57ea82c

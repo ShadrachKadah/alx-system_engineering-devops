@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+#!/usr/bin/env bash
+# Indefinitely writes "I am alive" to the file /tmp/my_process.
+=======
 ndefinitely writes "I am alive" to the file /tmp/my_process.
+>>>>>>> fbd96087233d3acf2680ae816c88ae96e57ea82c
 #   Pauses two seconds in between each message.
 
 while true
